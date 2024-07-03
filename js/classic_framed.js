@@ -61,7 +61,7 @@ function loadEpisode(index) {
     ];
 
     frames.forEach((frame, i) => {
-        frame.src = `images/${episode.Code}/${episode[`Guess ${i + 1}`]}`;
+        frame.src = `images/${episode.Code.toUpperCase()}/${episode[`Guess ${i + 1}`]}`;
     });
 
     let currentFrame = 0;
