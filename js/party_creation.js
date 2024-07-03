@@ -33,7 +33,7 @@ function loadRandomImages() {
         div.dataset.index = index;
         div.innerHTML = `
             <div class="rank">Guess ${index + 1}</div>
-            <img src="images/${currentEpisode.code}/${image}" alt="Image ${index + 1}">
+            <img src="images/${currentEpisode.code.toUpperCase()}/${image}" alt="Image ${index + 1}">
             <button class="remove-button" onclick="removeImage(${index})">Retirer</button>
         `;
         imageContainer.appendChild(div);

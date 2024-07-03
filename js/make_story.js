@@ -10,7 +10,7 @@ fetch('data/episodes_data.json')
         episodesData.forEach(episode => {
             episode.images.forEach(image => {
                 allImages.push({
-                    src: `images/${episode.code}/${image}`,
+                    src: `images/${episode.code.toUpperCase()}/${image}`,
                     code: episode.code
                 });
             });
