@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.image-item {
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.image-item img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+}
+
+.caption {
+    margin-top: 10px;
+    font-style: italic;
+    word-wrap: break-word;
+    width: 200px;
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#story-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.story-frame {
+    margin: 10px;
+    text-align: center;
+}
+
+.story-frame img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+}
+
+.story-frame .caption {
+    margin-top: 5px;
+    word-wrap: break-word;
+    width: 200px;
+    text-align: center;
+}
+
+#caption-input {
+    width: 80%;
+    max-width: 500px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#download-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}

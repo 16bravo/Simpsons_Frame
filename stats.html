@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistics</title>
+  <link rel="stylesheet" href="css/stats.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Statistics</h1>
+    <div class="stat">
+      <span class="label">Number of games played:</span>
+      <span id="gamesPlayed">0</span>
+    </div>
+    <div class="stat">
+      <span class="label">Number of games won:</span>
+      <span id="gamesWon">0</span>
+    </div>
+    <div class="stat">
+      <span class="label">Winning percentage:</span>
+      <span id="winPercentage">0%</span>
+    </div>
+    <h2>Guess Distribution</h2>
+    <div class="chart" id="guessChart">
+      <!-- Chart will be dynamically populated -->
+    </div>
+  </div>
+
+  <script src="js/stats.js"></script>
+</body>
+</html>

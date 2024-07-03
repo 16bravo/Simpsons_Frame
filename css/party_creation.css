@@ -1,0 +1,43 @@
+#image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.image-item {
+    margin: 10px;
+    text-align: center;
+    cursor: grab;
+}
+
+.image-item img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.rank {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.remove-button {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: darkred;
+}

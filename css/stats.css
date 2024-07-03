@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .stat {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .stat .label {
+    display: inline-block;
+    width: 200px; /* Ajustement de la largeur pour aligner les labels */
+  }
+  
+  .chart {
+    margin-top: 20px;
+  }
+  
+  .bar {
+    display: flex; /* Utilisation de flexbox pour aligner les barres horizontalement */
+    align-items: center; /* Alignement vertical au centre */
+    height: 30px; /* Hauteur des barres */
+    margin-bottom: 10px; /* Espacement entre les barres */
+  }
+  
+  .bar .label {
+    padding-left: 10px; /* Espacement à gauche */
+  }
+  
+  .bar .fill {
+    height: 100%;
+    background-color: gold;
+  }
+  
+  .bar .fillPercentage {
+    padding-left: 10px; /* Espacement entre la barre et le pourcentage */
+  }
+  

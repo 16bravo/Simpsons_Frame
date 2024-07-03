@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Story</title>
+    <link rel="stylesheet" href="css/make_story.css">
+</head>
+<body>
+    <h1>Make a Story</h1>
+    <div id="image-container"></div>
+    <div id="caption-container" style="display:none;">
+        <input type="text" id="caption-input" placeholder="Enter caption here...">
+        <div class="button-container">
+            <button onclick="addFrame()">Add Frame</button>
+            <button onclick="concludeStory()">Conclude Story</button>
+        </div>
+    </div>
+    <div id="story-container"></div>
+    <div id="download-container" style="display:none;">
+        <div class="button-container">
+            <button onclick="downloadStory()">Download Story</button>
+            <button onclick="resetStory()">Reset Story</button>
+        </div>
+    </div>
+    <script src="js/make_story.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison Game</title>
+    <style>
+        #images-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .image-wrapper {
+            text-align: center;
+            cursor: pointer;
+        }
+        img {
+            width: 300px;
+            height: auto;
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="episode-title"></h1>
+    <div id="images-container">
+        <div class="image-wrapper" onclick="vote(1)">
+            <img id="image1" src="" alt="Image 1">
+            <p id="elo1"></p>
+        </div>
+        <div class="image-wrapper" onclick="vote(0)">
+            <img id="image2" src="" alt="Image 2">
+            <p id="elo2"></p>
+        </div>
+    </div>
+    <div class="button-container">
+        <button onclick="vote(0.5)">Égalité</button>
+    </div>
+    <div class="button-container">
+        <button onclick="downloadResults()">Télécharger les résultats</button>
+    </div>
+    <p id="result"></p>
+
+    <script src="js/compare.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Simpsons Framed Game</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f0f0f0; }
+    .container { max-width: 600px; margin: 50px auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; }
+    .carousel { position: relative; width: 100%; height: 240px; }
+    .frame { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .frame img { max-width: 100%; max-height: 100%; border-radius: 8px; }
+    .frame.active { display: block; }
+    .buttons { margin-top: 20px; }
+    .buttons button { padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer; margin: 0 5px; }
+    .buttons button:disabled { background-color: #ccc; cursor: not-allowed; }
+    input[type="text"] { width: 100%; padding: 10px; margin: 20px 0; border: 1px solid #ccc; border-radius: 4px; }
+    .navigation { margin-top: 20px; }
+    .navigation a { padding: 10px 20px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 4px; margin: 0 5px; }
+    .navigation a.disabled { background-color: #ccc; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Classic Simpsons Framed Game</h1>
+    <div class="carousel">
+      <div class="frame" id="frame1"><img src="" alt="Frame 1"></div>
+      <div class="frame" id="frame2"><img src="" alt="Frame 2"></div>
+      <div class="frame" id="frame3"><img src="" alt="Frame 3"></div>
+      <div class="frame" id="frame4"><img src="" alt="Frame 4"></div>
+      <div class="frame" id="frame5"><img src="" alt="Frame 5"></div>
+    </div>
+    <div class="buttons" id="frameButtons">
+      <button id="btn1">1</button>
+      <button id="btn2">2</button>
+      <button id="btn3">3</button>
+      <button id="btn4">4</button>
+      <button id="btn5">5</button>
+    </div>
+    <input type="text" id="guess" list="episodeTitles" placeholder="Devinez l'épisode">
+    <datalist id="episodeTitles"></datalist>
+    <button id="submitGuess">Valider</button>
+    <p id="result"></p>
+    <div class="navigation">
+      <a href="#" id="prev">Précédent</a>
+      <a href="#" id="next">Suivant</a>
+    </div>
+
+    <!-- Bouton pour afficher les statistiques -->
+    <div class="navigation" id="showStatsButton" onclick="showStats()"><a><i class="fa fa-bar-chart" aria-hidden="true"></i></a></div>
+  </div>
+
+  <script src="js/classic_framed.js"></script>
+  <script>
+    // Fonction pour afficher les statistiques dans une nouvelle fenêtre
+    function showStats() {
+      window.open('stats.html', '_blank');
+    }
+  </script>
+</body>
+</html>
